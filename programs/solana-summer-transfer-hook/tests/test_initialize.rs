@@ -11,20 +11,26 @@ use {
     solana_signer::Signer,
 };
 
+use anchor_spl::token_2022::spl_token_2022;
 use helpers::{initialize_mint, setup};
 
 #[test]
 fn test_initialize() {
     let (mut svm, payer, program_id) = setup();
     let mint = Keypair::new();
+    // let payer == owner in this case
+    let owner = payer.pubkey();
 
     // First create the mint via the dedicated instruction
     initialize_mint(&mut svm, &payer, &mint, &program_id);
 
     // Then initialize the rate limit account
-    let rate_limit =
-        Pubkey::find_program_address(&[b"rate_limit", mint.as_ref(), owner.as_ref()], &program_id)
-            .0;
+    // add updated seeds
+    let rate_limit = Pubkey::find_program_address(
+        &[b"rate_limit", mint.pubkey().as_ref(), owner.as_ref()],
+        &program_id,
+    )
+    .0;
 
     let instruction = Instruction::new_with_bytes(
         program_id,
@@ -33,7 +39,9 @@ fn test_initialize() {
             payer: payer.pubkey(),
             rate_limit,
             system_program: SYSTEM_PROGRAM_ID,
-            mint: mint,
+            mint: mint.pubkey(),
+            owner: owner,
+            token_program: spl_token_2022::ID,
         }
         .to_account_metas(None),
     );

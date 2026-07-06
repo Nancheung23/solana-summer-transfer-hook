@@ -1,134 +1,17 @@
-   0.151490432s  INFO prepare_target{force=false package_id=solana-summer-transfer-hook v0.1.0 (/home/yannan/solana_workspace/solana-summer-transfer-hook/programs/solana-summer-transfer-hook) target="test_init_extra_account_meta"}: cargo::core::compiler::fingerprint: fingerprint error for solana-summer-transfer-hook v0.1.0 (/home/yannan/solana_workspace/solana-summer-transfer-hook/programs/solana-summer-transfer-hook)/Check { test: true }/TargetInner { kind: "test", name: "test_init_extra_account_meta", benched: false, ..: with_path("/home/yannan/solana_workspace/solana-summer-transfer-hook/programs/solana-summer-transfer-hook/tests/test_init_extra_account_meta.rs", Edition2021) }
-   0.151525624s  INFO prepare_target{force=false package_id=solana-summer-transfer-hook v0.1.0 (/home/yannan/solana_workspace/solana-summer-transfer-hook/programs/solana-summer-transfer-hook) target="test_init_extra_account_meta"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/yannan/solana_workspace/solana-summer-transfer-hook/target/debug/.fingerprint/solana-summer-transfer-hook-7b702f588184e620/test-integration-test-test_init_extra_account_meta`
-
-Caused by:
-    No such file or directory (os error 2)
-
-Stack backtrace:
-   0: cargo_util::paths::read_bytes
-   1: cargo_util::paths::read
-   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
-   3: cargo::core::compiler::fingerprint::prepare_target
-   4: cargo::core::compiler::compile
-   5: <cargo::core::compiler::build_runner::BuildRunner>::compile
-   6: cargo::ops::cargo_compile::compile_ws
-   7: cargo::ops::cargo_compile::compile_with_exec
-   8: cargo::ops::cargo_compile::compile
-   9: cargo::commands::check::exec
-  10: <cargo::cli::Exec>::exec
-  11: cargo::main
-  12: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
-  13: std::rt::lang_start::<()>::{closure#0}
-  14: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
-             at /rustc/29483883eed69d5fb4db01964cdf2af4d86e9cb2/library/core/src/ops/function.rs:284:21
-  15: std::panicking::catch_unwind::do_call
-             at /rustc/29483883eed69d5fb4db01964cdf2af4d86e9cb2/library/std/src/panicking.rs:589:40
-  16: std::panicking::catch_unwind
-             at /rustc/29483883eed69d5fb4db01964cdf2af4d86e9cb2/library/std/src/panicking.rs:552:19
-  17: std::panic::catch_unwind
-             at /rustc/29483883eed69d5fb4db01964cdf2af4d86e9cb2/library/std/src/panic.rs:359:14
-  18: std::rt::lang_start_internal::{{closure}}
-             at /rustc/29483883eed69d5fb4db01964cdf2af4d86e9cb2/library/std/src/rt.rs:175:24
-  19: std::panicking::catch_unwind::do_call
-             at /rustc/29483883eed69d5fb4db01964cdf2af4d86e9cb2/library/std/src/panicking.rs:589:40
-  20: std::panicking::catch_unwind
-             at /rustc/29483883eed69d5fb4db01964cdf2af4d86e9cb2/library/std/src/panicking.rs:552:19
-  21: std::panic::catch_unwind
-             at /rustc/29483883eed69d5fb4db01964cdf2af4d86e9cb2/library/std/src/panic.rs:359:14
-  22: std::rt::lang_start_internal
-             at /rustc/29483883eed69d5fb4db01964cdf2af4d86e9cb2/library/std/src/rt.rs:171:5
-  23: main
-  24: <unknown>
-  25: __libc_start_main
-  26: <unknown>
-   0.156832559s  INFO prepare_target{force=false package_id=solana-summer-transfer-hook v0.1.0 (/home/yannan/solana_workspace/solana-summer-transfer-hook/programs/solana-summer-transfer-hook) target="test_initialize"}: cargo::core::compiler::fingerprint: fingerprint error for solana-summer-transfer-hook v0.1.0 (/home/yannan/solana_workspace/solana-summer-transfer-hook/programs/solana-summer-transfer-hook)/Check { test: true }/TargetInner { kind: "test", name: "test_initialize", benched: false, ..: with_path("/home/yannan/solana_workspace/solana-summer-transfer-hook/programs/solana-summer-transfer-hook/tests/test_initialize.rs", Edition2021) }
-   0.156860486s  INFO prepare_target{force=false package_id=solana-summer-transfer-hook v0.1.0 (/home/yannan/solana_workspace/solana-summer-transfer-hook/programs/solana-summer-transfer-hook) target="test_initialize"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/yannan/solana_workspace/solana-summer-transfer-hook/target/debug/.fingerprint/solana-summer-transfer-hook-f5e55ff92808388d/test-integration-test-test_initialize`
-
-Caused by:
-    No such file or directory (os error 2)
-
-Stack backtrace:
-   0: cargo_util::paths::read_bytes
-   1: cargo_util::paths::read
-   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
-   3: cargo::core::compiler::fingerprint::prepare_target
-   4: cargo::core::compiler::compile
-   5: <cargo::core::compiler::build_runner::BuildRunner>::compile
-   6: cargo::ops::cargo_compile::compile_ws
-   7: cargo::ops::cargo_compile::compile_with_exec
-   8: cargo::ops::cargo_compile::compile
-   9: cargo::commands::check::exec
-  10: <cargo::cli::Exec>::exec
-  11: cargo::main
-  12: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
-  13: std::rt::lang_start::<()>::{closure#0}
-  14: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
-             at /rustc/29483883eed69d5fb4db01964cdf2af4d86e9cb2/library/core/src/ops/function.rs:284:21
-  15: std::panicking::catch_unwind::do_call
-             at /rustc/29483883eed69d5fb4db01964cdf2af4d86e9cb2/library/std/src/panicking.rs:589:40
-  16: std::panicking::catch_unwind
-             at /rustc/29483883eed69d5fb4db01964cdf2af4d86e9cb2/library/std/src/panicking.rs:552:19
-  17: std::panic::catch_unwind
-             at /rustc/29483883eed69d5fb4db01964cdf2af4d86e9cb2/library/std/src/panic.rs:359:14
-  18: std::rt::lang_start_internal::{{closure}}
-             at /rustc/29483883eed69d5fb4db01964cdf2af4d86e9cb2/library/std/src/rt.rs:175:24
-  19: std::panicking::catch_unwind::do_call
-             at /rustc/29483883eed69d5fb4db01964cdf2af4d86e9cb2/library/std/src/panicking.rs:589:40
-  20: std::panicking::catch_unwind
-             at /rustc/29483883eed69d5fb4db01964cdf2af4d86e9cb2/library/std/src/panicking.rs:552:19
-  21: std::panic::catch_unwind
-             at /rustc/29483883eed69d5fb4db01964cdf2af4d86e9cb2/library/std/src/panic.rs:359:14
-  22: std::rt::lang_start_internal
-             at /rustc/29483883eed69d5fb4db01964cdf2af4d86e9cb2/library/std/src/rt.rs:171:5
-  23: main
-  24: <unknown>
-  25: __libc_start_main
-  26: <unknown>
-   0.157637359s  INFO prepare_target{force=false package_id=solana-summer-transfer-hook v0.1.0 (/home/yannan/solana_workspace/solana-summer-transfer-hook/programs/solana-summer-transfer-hook) target="test_transfer_hook"}: cargo::core::compiler::fingerprint: fingerprint error for solana-summer-transfer-hook v0.1.0 (/home/yannan/solana_workspace/solana-summer-transfer-hook/programs/solana-summer-transfer-hook)/Check { test: true }/TargetInner { kind: "test", name: "test_transfer_hook", benched: false, ..: with_path("/home/yannan/solana_workspace/solana-summer-transfer-hook/programs/solana-summer-transfer-hook/tests/test_transfer_hook.rs", Edition2021) }
-   0.157663587s  INFO prepare_target{force=false package_id=solana-summer-transfer-hook v0.1.0 (/home/yannan/solana_workspace/solana-summer-transfer-hook/programs/solana-summer-transfer-hook) target="test_transfer_hook"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/yannan/solana_workspace/solana-summer-transfer-hook/target/debug/.fingerprint/solana-summer-transfer-hook-69884a3370d5b5e9/test-integration-test-test_transfer_hook`
-
-Caused by:
-    No such file or directory (os error 2)
-
-Stack backtrace:
-   0: cargo_util::paths::read_bytes
-   1: cargo_util::paths::read
-   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
-   3: cargo::core::compiler::fingerprint::prepare_target
-   4: cargo::core::compiler::compile
-   5: <cargo::core::compiler::build_runner::BuildRunner>::compile
-   6: cargo::ops::cargo_compile::compile_ws
-   7: cargo::ops::cargo_compile::compile_with_exec
-   8: cargo::ops::cargo_compile::compile
-   9: cargo::commands::check::exec
-  10: <cargo::cli::Exec>::exec
-  11: cargo::main
-  12: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
-  13: std::rt::lang_start::<()>::{closure#0}
-  14: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
-             at /rustc/29483883eed69d5fb4db01964cdf2af4d86e9cb2/library/core/src/ops/function.rs:284:21
-  15: std::panicking::catch_unwind::do_call
-             at /rustc/29483883eed69d5fb4db01964cdf2af4d86e9cb2/library/std/src/panicking.rs:589:40
-  16: std::panicking::catch_unwind
-             at /rustc/29483883eed69d5fb4db01964cdf2af4d86e9cb2/library/std/src/panicking.rs:552:19
-  17: std::panic::catch_unwind
-             at /rustc/29483883eed69d5fb4db01964cdf2af4d86e9cb2/library/std/src/panic.rs:359:14
-  18: std::rt::lang_start_internal::{{closure}}
-             at /rustc/29483883eed69d5fb4db01964cdf2af4d86e9cb2/library/std/src/rt.rs:175:24
-  19: std::panicking::catch_unwind::do_call
-             at /rustc/29483883eed69d5fb4db01964cdf2af4d86e9cb2/library/std/src/panicking.rs:589:40
-  20: std::panicking::catch_unwind
-             at /rustc/29483883eed69d5fb4db01964cdf2af4d86e9cb2/library/std/src/panicking.rs:552:19
-  21: std::panic::catch_unwind
-             at /rustc/29483883eed69d5fb4db01964cdf2af4d86e9cb2/library/std/src/panic.rs:359:14
-  22: std::rt::lang_start_internal
-             at /rustc/29483883eed69d5fb4db01964cdf2af4d86e9cb2/library/std/src/rt.rs:171:5
-  23: main
-  24: <unknown>
-  25: __libc_start_main
-  26: <unknown>
+   0.136802931s  INFO prepare_target{force=false package_id=solana-summer-transfer-hook v0.1.0 (/home/yannan/solana_workspace/solana-summer-transfer-hook/programs/solana-summer-transfer-hook) target="test_init_extra_account_meta"}: cargo::core::compiler::fingerprint: stale: changed "/home/yannan/solana_workspace/solana-summer-transfer-hook/programs/solana-summer-transfer-hook/tests/helpers/mod.rs"
+   0.136830905s  INFO prepare_target{force=false package_id=solana-summer-transfer-hook v0.1.0 (/home/yannan/solana_workspace/solana-summer-transfer-hook/programs/solana-summer-transfer-hook) target="test_init_extra_account_meta"}: cargo::core::compiler::fingerprint:           (vs) "/home/yannan/solana_workspace/solana-summer-transfer-hook/target/debug/.fingerprint/solana-summer-transfer-hook-7b702f588184e620/dep-test-integration-test-test_init_extra_account_meta"
+   0.136834151s  INFO prepare_target{force=false package_id=solana-summer-transfer-hook v0.1.0 (/home/yannan/solana_workspace/solana-summer-transfer-hook/programs/solana-summer-transfer-hook) target="test_init_extra_account_meta"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 1783328625, nanos: 79408747 } < FileTime { seconds: 1783328663, nanos: 692669126 }
+   0.136871417s  INFO prepare_target{force=false package_id=solana-summer-transfer-hook v0.1.0 (/home/yannan/solana_workspace/solana-summer-transfer-hook/programs/solana-summer-transfer-hook) target="test_init_extra_account_meta"}: cargo::core::compiler::fingerprint: fingerprint dirty for solana-summer-transfer-hook v0.1.0 (/home/yannan/solana_workspace/solana-summer-transfer-hook/programs/solana-summer-transfer-hook)/Check { test: true }/TargetInner { kind: "test", name: "test_init_extra_account_meta", benched: false, ..: with_path("/home/yannan/solana_workspace/solana-summer-transfer-hook/programs/solana-summer-transfer-hook/tests/test_init_extra_account_meta.rs", Edition2021) }
+   0.136877666s  INFO prepare_target{force=false package_id=solana-summer-transfer-hook v0.1.0 (/home/yannan/solana_workspace/solana-summer-transfer-hook/programs/solana-summer-transfer-hook) target="test_init_extra_account_meta"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "/home/yannan/solana_workspace/solana-summer-transfer-hook/target/debug/.fingerprint/solana-summer-transfer-hook-7b702f588184e620/dep-test-integration-test-test_init_extra_account_meta", reference_mtime: FileTime { seconds: 1783328625, nanos: 79408747 }, stale: "/home/yannan/solana_workspace/solana-summer-transfer-hook/programs/solana-summer-transfer-hook/tests/helpers/mod.rs", stale_mtime: FileTime { seconds: 1783328663, nanos: 692669126 } }))
+   0.137674337s  INFO prepare_target{force=false package_id=solana-summer-transfer-hook v0.1.0 (/home/yannan/solana_workspace/solana-summer-transfer-hook/programs/solana-summer-transfer-hook) target="test_initialize"}: cargo::core::compiler::fingerprint: stale: changed "/home/yannan/solana_workspace/solana-summer-transfer-hook/programs/solana-summer-transfer-hook/tests/helpers/mod.rs"
+   0.137679011s  INFO prepare_target{force=false package_id=solana-summer-transfer-hook v0.1.0 (/home/yannan/solana_workspace/solana-summer-transfer-hook/programs/solana-summer-transfer-hook) target="test_initialize"}: cargo::core::compiler::fingerprint:           (vs) "/home/yannan/solana_workspace/solana-summer-transfer-hook/target/debug/.fingerprint/solana-summer-transfer-hook-f5e55ff92808388d/dep-test-integration-test-test_initialize"
+   0.137680908s  INFO prepare_target{force=false package_id=solana-summer-transfer-hook v0.1.0 (/home/yannan/solana_workspace/solana-summer-transfer-hook/programs/solana-summer-transfer-hook) target="test_initialize"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 1783328625, nanos: 79408747 } < FileTime { seconds: 1783328663, nanos: 692669126 }
+   0.137704526s  INFO prepare_target{force=false package_id=solana-summer-transfer-hook v0.1.0 (/home/yannan/solana_workspace/solana-summer-transfer-hook/programs/solana-summer-transfer-hook) target="test_initialize"}: cargo::core::compiler::fingerprint: fingerprint dirty for solana-summer-transfer-hook v0.1.0 (/home/yannan/solana_workspace/solana-summer-transfer-hook/programs/solana-summer-transfer-hook)/Check { test: true }/TargetInner { kind: "test", name: "test_initialize", benched: false, ..: with_path("/home/yannan/solana_workspace/solana-summer-transfer-hook/programs/solana-summer-transfer-hook/tests/test_initialize.rs", Edition2021) }
+   0.137709691s  INFO prepare_target{force=false package_id=solana-summer-transfer-hook v0.1.0 (/home/yannan/solana_workspace/solana-summer-transfer-hook/programs/solana-summer-transfer-hook) target="test_initialize"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "/home/yannan/solana_workspace/solana-summer-transfer-hook/target/debug/.fingerprint/solana-summer-transfer-hook-f5e55ff92808388d/dep-test-integration-test-test_initialize", reference_mtime: FileTime { seconds: 1783328625, nanos: 79408747 }, stale: "/home/yannan/solana_workspace/solana-summer-transfer-hook/programs/solana-summer-transfer-hook/tests/helpers/mod.rs", stale_mtime: FileTime { seconds: 1783328663, nanos: 692669126 } }))
+   0.138385491s  INFO prepare_target{force=false package_id=solana-summer-transfer-hook v0.1.0 (/home/yannan/solana_workspace/solana-summer-transfer-hook/programs/solana-summer-transfer-hook) target="test_transfer_hook"}: cargo::core::compiler::fingerprint: stale: changed "/home/yannan/solana_workspace/solana-summer-transfer-hook/programs/solana-summer-transfer-hook/tests/helpers/mod.rs"
+   0.138388913s  INFO prepare_target{force=false package_id=solana-summer-transfer-hook v0.1.0 (/home/yannan/solana_workspace/solana-summer-transfer-hook/programs/solana-summer-transfer-hook) target="test_transfer_hook"}: cargo::core::compiler::fingerprint:           (vs) "/home/yannan/solana_workspace/solana-summer-transfer-hook/target/debug/.fingerprint/solana-summer-transfer-hook-69884a3370d5b5e9/dep-test-integration-test-test_transfer_hook"
+   0.138390526s  INFO prepare_target{force=false package_id=solana-summer-transfer-hook v0.1.0 (/home/yannan/solana_workspace/solana-summer-transfer-hook/programs/solana-summer-transfer-hook) target="test_transfer_hook"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 1783328625, nanos: 80608545 } < FileTime { seconds: 1783328663, nanos: 692669126 }
+   0.138408894s  INFO prepare_target{force=false package_id=solana-summer-transfer-hook v0.1.0 (/home/yannan/solana_workspace/solana-summer-transfer-hook/programs/solana-summer-transfer-hook) target="test_transfer_hook"}: cargo::core::compiler::fingerprint: fingerprint dirty for solana-summer-transfer-hook v0.1.0 (/home/yannan/solana_workspace/solana-summer-transfer-hook/programs/solana-summer-transfer-hook)/Check { test: true }/TargetInner { kind: "test", name: "test_transfer_hook", benched: false, ..: with_path("/home/yannan/solana_workspace/solana-summer-transfer-hook/programs/solana-summer-transfer-hook/tests/test_transfer_hook.rs", Edition2021) }
+   0.138414394s  INFO prepare_target{force=false package_id=solana-summer-transfer-hook v0.1.0 (/home/yannan/solana_workspace/solana-summer-transfer-hook/programs/solana-summer-transfer-hook) target="test_transfer_hook"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "/home/yannan/solana_workspace/solana-summer-transfer-hook/target/debug/.fingerprint/solana-summer-transfer-hook-69884a3370d5b5e9/dep-test-integration-test-test_transfer_hook", reference_mtime: FileTime { seconds: 1783328625, nanos: 80608545 }, stale: "/home/yannan/solana_workspace/solana-summer-transfer-hook/programs/solana-summer-transfer-hook/tests/helpers/mod.rs", stale_mtime: FileTime { seconds: 1783328663, nanos: 692669126 } }))
     Checking solana-summer-transfer-hook v0.1.0 (/home/yannan/solana_workspace/solana-summer-transfer-hook/programs/solana-summer-transfer-hook)
-error: could not compile `solana-summer-transfer-hook` (test "test_init_extra_account_meta") due to 4 previous errors
-warning: build failed, waiting for other jobs to finish...
-error: could not compile `solana-summer-transfer-hook` (test "test_transfer_hook") due to 3 previous errors
-error: could not compile `solana-summer-transfer-hook` (test "test_initialize") due to 7 previous errors
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.21s
