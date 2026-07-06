@@ -10,7 +10,7 @@ pub struct Initialize<'info> {
     // mint
     pub mint: InterfaceAccount<'info, Mint>,
     // owner
-    /// CHECK: Owner Account, will be initialized in this instruction
+    /// CHECK: source token account owner, can be SystemAccount or PDA owned by another program
     pub owner: UncheckedAccount<'info>,
 
     #[account(
