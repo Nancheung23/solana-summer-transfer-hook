@@ -11,7 +11,7 @@ pub use constants::*;
 pub use instructions::*;
 pub use state::*;
 
-declare_id!("JCbz8TYngx4LXqpR3JJfnVRgxvuc7JMzjvv3PaVvZi5k");
+declare_id!("5dfwYXD3vKH351GrAVp4amHNkgq9etdcMQyki3BvqpZs");
 
 #[program]
 pub mod solana_summer_transfer_hook {
@@ -26,8 +26,14 @@ pub mod solana_summer_transfer_hook {
         initialize::handler(ctx)
     }
 
-    pub fn initialize_extra_account_meta_list(ctx: Context<InitializeExtraAccountMetaList>) -> Result<()> {
+    pub fn initialize_extra_account_meta_list(
+        ctx: Context<InitializeExtraAccountMetaList>,
+    ) -> Result<()> {
         init_extra_account_meta::handler(ctx)
+    }
+
+    pub fn transfer<'info>(ctx: Context<'info, Transfer<'info>>, amount: u64) -> Result<()> {
+        transfer::handler(ctx, amount)
     }
 
     #[instruction(discriminator = ExecuteInstruction::SPL_DISCRIMINATOR_SLICE)]

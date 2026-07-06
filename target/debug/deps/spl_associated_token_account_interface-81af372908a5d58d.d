@@ -1,7 +1,0 @@
-/home/yannan/solana_workspace/solana-summer-transfer-hook/target/debug/deps/spl_associated_token_account_interface-81af372908a5d58d.d: /home/yannan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/spl-associated-token-account-interface-2.0.0/src/lib.rs /home/yannan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/spl-associated-token-account-interface-2.0.0/src/address.rs /home/yannan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/spl-associated-token-account-interface-2.0.0/src/instruction.rs
-
-/home/yannan/solana_workspace/solana-summer-transfer-hook/target/debug/deps/libspl_associated_token_account_interface-81af372908a5d58d.rmeta: /home/yannan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/spl-associated-token-account-interface-2.0.0/src/lib.rs /home/yannan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/spl-associated-token-account-interface-2.0.0/src/address.rs /home/yannan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/spl-associated-token-account-interface-2.0.0/src/instruction.rs
-
-/home/yannan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/spl-associated-token-account-interface-2.0.0/src/lib.rs:
-/home/yannan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/spl-associated-token-account-interface-2.0.0/src/address.rs:
-/home/yannan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/spl-associated-token-account-interface-2.0.0/src/instruction.rs:
